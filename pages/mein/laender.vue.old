@@ -1,0 +1,23 @@
+<template>
+    <UContainer class="pt-4">
+        <div class="flex gap-12">
+            <div class="w-full">
+                <span>
+                    <a class="text-sm font-bold mb-2 hover:underline" href="/mein">Dashboard</a>
+                    &nbsp;<span>></span>&nbsp;
+                    <a class="text-sm text-primary font-bold mb-2 hover:underline" href="/mein/laender">Länder</a>
+                </span>
+                <div class="flex justify-between items-center">
+                    <h1 class="text-4xl font-bold">Länder</h1>
+                    <UIcon name="i-lucide-circle-plus" class="size-6 hover:cursor-pointer hover:text-primary" />
+                </div>
+                <USeparator class="mt-6" />
+
+            </div>
+        </div>
+        <div class="grid grid-cols-4 gap-4 mt-4">
+            <CountryCard title="Gurkistan" to="/mein/laender/edit/" />
+            <CountryCard title="Futuna" to="/mein/laender/edit/" />
+        </div>
+    </UContainer>
+</template>
